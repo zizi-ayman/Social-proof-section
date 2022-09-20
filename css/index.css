@@ -1,0 +1,174 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    background: url("../img/bg-pattern-top-desktop.svg") no-repeat ,url("../img/bg-pattern-bottom-desktop.svg") no-repeat;
+    color: hsl(300, 43%, 22%);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/*--------------------------------------------------*/
+/*              The styling of the main items      */
+
+main{
+    display: grid;
+    grid-template-rows: repeat(20 , 1fr);
+    grid-template-columns: repeat(20 , 1fr);
+    justify-content: center;
+    max-width: 85%;
+}
+.page-info{
+    grid-area: 3 / 2 / 8 / 8;
+}
+.rate{
+    grid-area: 3 / 11 / 7 / 21;
+}
+section{
+    grid-area: 9 / 2 / 15 / 21;
+}
+section h4{
+    font-weight: 400;
+}
+
+/*--------------------------------------------------*/
+/*              The styling of the rate div        */
+
+.rate{
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(20 , 1fr);
+    gap: 10px;
+}
+.rate-one{
+    grid-area: 1 / 1 / 2 / 13;
+}
+.rate-two{
+    grid-area: 2 / 2 / 3 / 15;
+}
+.rate-three{
+    grid-area: 3 / 3 / 4 / 17;
+}
+.rate-one , .rate-two , .rate-three{
+    background-color: hsl(300, 24%, 96%);
+    font-weight: 700;
+    border-radius: 7px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0% 6%;
+}
+.rate p{
+    padding-left: 3%;
+}
+
+/*--------------------------------------------------*/
+/*              The styling of page-info div       */
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5%;
+}
+
+/*--------------------------------------------------*/
+/*              The styling of the section         */
+
+section{
+    display: grid;
+    grid-template-rows: repeat(20 , 1fr);
+    grid-template-columns: repeat(20 , 1fr);
+    gap: 2%;
+}
+.info-colton{
+    grid-area: 1 / 1 / 18 / 7 ;
+} 
+.info-irene{
+    grid-area: 2 / 7 / 19 / 13 ;
+}
+.info-anne{
+    grid-area: 3 / 13 / 20 / 19 ;
+}
+.info{
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 6%;
+}
+.info div{
+    display: flex;
+    align-items: center;
+}
+.info div div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+.info img{
+    border-radius: 50%;
+    max-width:30%;
+    max-height: 50%;
+}
+.info h4{
+    color: hsl(333, 80%, 67%);
+}
+.info p{
+    flex-direction: row;
+}
+
+/*--------------------------------------------------*/
+@media (max-width: 1200px) {
+    .rate-one , .rate-two , .rate-three{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 950px) {
+    main{
+        max-width: 95%;
+    }
+
+}
+@media (max-width: 850px) {
+    main{
+        max-width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    /*--------------------------------------------------*/
+    /*              The styling of the main items      */
+    main{
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+    .page-info, .rate , section{
+        padding: 5% 0%;
+    } 
+    /*--------------------------------------------------*/
+    /*    The styling of the rate div and the sectio   */
+
+    .rate , section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section div{
+        margin: 2% 0%;
+    }
+}
