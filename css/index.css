@@ -13,7 +13,6 @@ body {
     justify-content: center;
     font-family: 'League Spartan', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
 }
 
 
@@ -48,6 +47,7 @@ section h4{
     grid-template-rows: repeat(3 , 1fr);
     grid-template-columns: repeat(20 , 1fr);
     gap: 10px;
+    line-height: 1.5;
 }
 .rate-one{
     grid-area: 1 / 1 / 2 / 13;
@@ -75,10 +75,11 @@ section h4{
 /*              The styling of page-info div       */
 
 h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1;
+    font-size: 2.8rem;
     margin-bottom: 5%;
+}
+p{
+    line-height: 1.5;
 }
 
 /*--------------------------------------------------*/
@@ -89,15 +90,16 @@ section{
     grid-template-rows: repeat(20 , 1fr);
     grid-template-columns: repeat(20 , 1fr);
     gap: 2%;
+    line-height: 1.5;
 }
 .info-colton{
-    grid-area: 1 / 1 / 18 / 7 ;
+    grid-area: 1 / 1 / 19 / 7 ;
 } 
 .info-irene{
-    grid-area: 2 / 7 / 19 / 13 ;
+    grid-area: 2 / 7 / 20 / 13 ;
 }
 .info-anne{
-    grid-area: 3 / 13 / 20 / 19 ;
+    grid-area: 3 / 13 / 21 / 19 ;
 }
 .info{
     background-color: hsl(300, 43%, 22%);
@@ -106,7 +108,8 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0% 6%;
+    max-width: 320px;
+    padding: 20px;
 }
 .info div{
     display: flex;
